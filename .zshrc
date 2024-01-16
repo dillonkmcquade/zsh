@@ -15,7 +15,7 @@ ZSH_THEME="robbyrussell"
 plugins=(zsh-autosuggestions zsh-syntax-highlighting)
 
 #Source external config files
-source $ZSH/oh-my-zsh.sh
+source "$ZSH/oh-my-zsh.sh"
 
 #Path
 path+=("/home/$USER/.local/bin")
