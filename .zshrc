@@ -12,7 +12,7 @@ bindkey '^ ' autosuggest-accept
 ZSH_THEME="robbyrussell"
 
 # OMZ plugins
-plugins=(zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(zsh-autosuggestions zsh-syntax-highlighting helm ng golang kubectl kind poetry fly)
 
 #Source external config files
 source "$ZSH/oh-my-zsh.sh"
@@ -82,5 +82,4 @@ if [ -f '/home/dillon/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/home/
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/dillon/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/dillon/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 
-# Load Angular CLI autocompletion.
-source <(ng completion script)
+. "$HOME/.local/share/../bin/env"

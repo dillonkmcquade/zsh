@@ -22,6 +22,7 @@ export ARCHFLAGS="-arch x86_64"
 export PYENV_ROOT="$XDG_DATA_HOME/pyenv"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+export DOCKER_HOST="unix:///run/user/1000/podman/podman.sock"
 
 #default programs
 export BROWSER='brave-browser'
